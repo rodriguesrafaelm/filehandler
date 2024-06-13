@@ -10,6 +10,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath("../.."))
 
+
 project = "FileHandler"
 copyright = "2024, Labs42"
 author = "Labs42"

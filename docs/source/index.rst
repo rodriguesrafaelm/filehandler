@@ -1,22 +1,26 @@
-.. FileHandler documentation master file, created by
-   sphinx-quickstart on Tue Jun 11 16:00:03 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+=====================
+FileHandler Docs
+=====================
 
-Seja bem vindo a documentação do FileHandler!
-=============================================
+Introdução
+==========
+Bem-vindo à documentação do FileHandler! Esta biblioteca fornece uma interface simples e poderosa para manipulação de arquivos e diretórios em Python.
+
+O FileHandler facilita operações comuns como leitura, escrita, cópia e exclusão de arquivos, além de gerenciamento de diretórios. Esta documentação irá guiá-lo através de todas as funcionalidades oferecidas pela biblioteca.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Conteúdos:
 
+   quickstart
    file_operations
    directory_operations
    util
+   contributing
+   help
 
-Indices and tables
-==================
-
+Índices e tabelas
+=================
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`

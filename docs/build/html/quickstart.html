@@ -2,10 +2,12 @@
 <html class="no-js" lang="en" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="File Operations" href="file_operations.html" /><link rel="prev" title="FileHandler Docs" href="index.html" />
 
-    <!-- Generated with Sphinx 7.3.7 and Furo 2024.05.06 --><title>Index - FileHandler 0.1 documentation</title>
-<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <!-- Generated with Sphinx 7.3.7 and Furo 2024.05.06 -->
+        <title>Guia de Início Rápido - FileHandler 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=387cc868" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
     
@@ -189,7 +191,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -210,8 +212,8 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Conteúdos:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Guia de Início Rápido</a></li>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Guia de Início Rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file_operations.html">File Operations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="directory_operations.html">Directory Operations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="util.html">Util</a></li>
@@ -236,7 +238,13 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/quickstart.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
@@ -245,141 +253,126 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          
-<section class="genindex-section">
-  <h1 id="index">Index</h1>
-  <div class="genindex-jumpbox"><a href="#C"><strong>C</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#L"><strong>L</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#W"><strong>W</strong></a></div>
+          <section id="guia-de-inicio-rapido">
+<h1>Guia de Início Rápido<a class="headerlink" href="#guia-de-inicio-rapido" title="Link to this heading">¶</a></h1>
+<section id="instalacao">
+<h2>Instalação<a class="headerlink" href="#instalacao" title="Link to this heading">¶</a></h2>
+<p>Para instalar o FileHandler, você pode usar o pip:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>filehandler
+</pre></div>
+</div>
 </section>
-<section id="C" class="genindex-section">
-  <h2>C</h2>
-  <table style="width: 100%" class="indextable genindextable"><tr>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li><a href="util.html#filehandler.util.copy_file">copy_file() (in module filehandler.util)</a>
-</li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li><a href="directory_operations.html#filehandler.directory_operations.create_directory">create_directory() (in module filehandler.directory_operations)</a>
-</li>
-    </ul></td>
-  </tr></table>
+<section id="primeiros-passos">
+<h2>Primeiros Passos<a class="headerlink" href="#primeiros-passos" title="Link to this heading">¶</a></h2>
+<p>Aqui está um exemplo simples de como usar o FileHandler para realizar operações básicas de leitura e escrita de arquivos de texto, CSV, JSON e XML.</p>
+<section id="leitura-e-escrita-de-arquivos-de-texto">
+<h3>Leitura e Escrita de Arquivos de Texto<a class="headerlink" href="#leitura-e-escrita-de-arquivos-de-texto" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">filehandler.file_operations</span> <span class="kn">import</span> <span class="n">read_text_file</span><span class="p">,</span> <span class="n">write_text_file</span>
+
+<span class="c1"># Escrevendo em um arquivo de texto</span>
+<span class="n">write_text_file</span><span class="p">(</span><span class="s2">&quot;example.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;Olá, Mundo!&quot;</span><span class="p">)</span>
+
+<span class="c1"># Lendo do arquivo de texto</span>
+<span class="n">conteudo</span> <span class="o">=</span> <span class="n">read_text_file</span><span class="p">(</span><span class="s2">&quot;example.txt&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">conteudo</span><span class="p">)</span>  <span class="c1"># Saída: Olá, Mundo!</span>
+</pre></div>
+</div>
 </section>
+<section id="leitura-e-escrita-de-arquivos-csv">
+<h3>Leitura e Escrita de Arquivos CSV<a class="headerlink" href="#leitura-e-escrita-de-arquivos-csv" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">filehandler.file_operations</span> <span class="kn">import</span> <span class="n">read_csv_file</span><span class="p">,</span> <span class="n">write_csv_file</span>
 
-<section id="F" class="genindex-section">
-  <h2>F</h2>
-  <table style="width: 100%" class="indextable genindextable"><tr>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li>
-    filehandler.directory_operations
+<span class="c1"># Dados para escrever no arquivo CSV</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;Nome&quot;</span><span class="p">,</span> <span class="s2">&quot;Idade&quot;</span><span class="p">,</span> <span class="s2">&quot;Cidade&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;30&quot;</span><span class="p">,</span> <span class="s2">&quot;Nova York&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="s2">&quot;25&quot;</span><span class="p">,</span> <span class="s2">&quot;Los Angeles&quot;</span><span class="p">]</span>
+<span class="p">]</span>
 
-        <ul>
-          <li><a href="directory_operations.html#module-filehandler.directory_operations">module</a>
-</li>
-        </ul></li>
-        <li>
-    filehandler.file_operations
+<span class="c1"># Escrevendo em um arquivo CSV</span>
+<span class="n">write_csv_file</span><span class="p">(</span><span class="s2">&quot;example.csv&quot;</span><span class="p">,</span> <span class="n">rows</span><span class="p">)</span>
 
-        <ul>
-          <li><a href="file_operations.html#module-filehandler.file_operations">module</a>
-</li>
-        </ul></li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li>
-    filehandler.util
-
-        <ul>
-          <li><a href="util.html#module-filehandler.util">module</a>
-</li>
-        </ul></li>
-    </ul></td>
-  </tr></table>
+<span class="c1"># Lendo do arquivo CSV</span>
+<span class="n">conteudo_csv</span> <span class="o">=</span> <span class="n">read_csv_file</span><span class="p">(</span><span class="s2">&quot;example.csv&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">conteudo_csv</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
+<section id="leitura-e-escrita-de-arquivos-json">
+<h3>Leitura e Escrita de Arquivos JSON<a class="headerlink" href="#leitura-e-escrita-de-arquivos-json" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">filehandler.file_operations</span> <span class="kn">import</span> <span class="n">read_json_file</span><span class="p">,</span> <span class="n">write_json_file</span>
 
-<section id="L" class="genindex-section">
-  <h2>L</h2>
-  <table style="width: 100%" class="indextable genindextable"><tr>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li><a href="directory_operations.html#filehandler.directory_operations.list_directory">list_directory() (in module filehandler.directory_operations)</a>
-</li>
-    </ul></td>
-  </tr></table>
+<span class="c1"># Dados para escrever no arquivo JSON</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;nome&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;idade&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+    <span class="s2">&quot;cidade&quot;</span><span class="p">:</span> <span class="s2">&quot;Nova York&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Escrevendo em um arquivo JSON</span>
+<span class="n">write_json_file</span><span class="p">(</span><span class="s2">&quot;example.json&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+<span class="c1"># Lendo do arquivo JSON</span>
+<span class="n">conteudo_json</span> <span class="o">=</span> <span class="n">read_json_file</span><span class="p">(</span><span class="s2">&quot;example.json&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">conteudo_json</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
+<section id="leitura-e-escrita-de-arquivos-xml">
+<h3>Leitura e Escrita de Arquivos XML<a class="headerlink" href="#leitura-e-escrita-de-arquivos-xml" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">ET</span>
+<span class="kn">from</span> <span class="nn">filehandler.file_operations</span> <span class="kn">import</span> <span class="n">read_xml_file</span><span class="p">,</span> <span class="n">write_xml_file</span>
 
-<section id="M" class="genindex-section">
-  <h2>M</h2>
-  <table style="width: 100%" class="indextable genindextable"><tr>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li>
-    module
+<span class="c1"># Criando um elemento XML</span>
+<span class="n">root</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s2">&quot;root&quot;</span><span class="p">)</span>
+<span class="n">child</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="s2">&quot;child&quot;</span><span class="p">)</span>
+<span class="n">child</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Este é um exemplo&quot;</span>
 
-        <ul>
-          <li><a href="directory_operations.html#module-filehandler.directory_operations">filehandler.directory_operations</a>
-</li>
-          <li><a href="file_operations.html#module-filehandler.file_operations">filehandler.file_operations</a>
-</li>
-          <li><a href="util.html#module-filehandler.util">filehandler.util</a>
-</li>
-        </ul></li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li><a href="util.html#filehandler.util.move_file">move_file() (in module filehandler.util)</a>
-</li>
-    </ul></td>
-  </tr></table>
+<span class="c1"># Escrevendo em um arquivo XML</span>
+<span class="n">write_xml_file</span><span class="p">(</span><span class="s2">&quot;example.xml&quot;</span><span class="p">,</span> <span class="n">root</span><span class="p">)</span>
+
+<span class="c1"># Lendo do arquivo XML</span>
+<span class="n">root_lido</span> <span class="o">=</span> <span class="n">read_xml_file</span><span class="p">(</span><span class="s2">&quot;example.xml&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ET</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">root_lido</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;unicode&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Este guia de início rápido deve fornecer uma boa visão geral sobre como usar as funcionalidades básicas do FileHandler. Para informações mais detalhadas, consulte as seções específicas da documentação.</p>
 </section>
-
-<section id="R" class="genindex-section">
-  <h2>R</h2>
-  <table style="width: 100%" class="indextable genindextable"><tr>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li><a href="file_operations.html#filehandler.file_operations.read_csv_file">read_csv_file() (in module filehandler.file_operations)</a>
-</li>
-        <li><a href="file_operations.html#filehandler.file_operations.read_json_file">read_json_file() (in module filehandler.file_operations)</a>
-</li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li><a href="file_operations.html#filehandler.file_operations.read_text_file">read_text_file() (in module filehandler.file_operations)</a>
-</li>
-        <li><a href="file_operations.html#filehandler.file_operations.read_xml_file">read_xml_file() (in module filehandler.file_operations)</a>
-</li>
-        <li><a href="directory_operations.html#filehandler.directory_operations.remove_directory">remove_directory() (in module filehandler.directory_operations)</a>
-</li>
-    </ul></td>
-  </tr></table>
 </section>
-
-<section id="W" class="genindex-section">
-  <h2>W</h2>
-  <table style="width: 100%" class="indextable genindextable"><tr>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li><a href="file_operations.html#filehandler.file_operations.write_csv_file">write_csv_file() (in module filehandler.file_operations)</a>
-</li>
-        <li><a href="file_operations.html#filehandler.file_operations.write_json_file">write_json_file() (in module filehandler.file_operations)</a>
-</li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
-        <li><a href="file_operations.html#filehandler.file_operations.write_text_file">write_text_file() (in module filehandler.file_operations)</a>
-</li>
-        <li><a href="file_operations.html#filehandler.file_operations.write_xml_file">write_xml_file() (in module filehandler.file_operations)</a>
-</li>
-    </ul></td>
-  </tr></table>
 </section>
-
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="file_operations.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">File Operations</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -398,8 +391,34 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guia de Início Rápido</a><ul>
+<li><a class="reference internal" href="#instalacao">Instalação</a></li>
+<li><a class="reference internal" href="#primeiros-passos">Primeiros Passos</a><ul>
+<li><a class="reference internal" href="#leitura-e-escrita-de-arquivos-de-texto">Leitura e Escrita de Arquivos de Texto</a></li>
+<li><a class="reference internal" href="#leitura-e-escrita-de-arquivos-csv">Leitura e Escrita de Arquivos CSV</a></li>
+<li><a class="reference internal" href="#leitura-e-escrita-de-arquivos-json">Leitura e Escrita de Arquivos JSON</a></li>
+<li><a class="reference internal" href="#leitura-e-escrita-de-arquivos-xml">Leitura e Escrita de Arquivos XML</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
