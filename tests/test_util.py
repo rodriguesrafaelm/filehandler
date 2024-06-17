@@ -1,5 +1,5 @@
 import os
-from filehandler.util import *
+from filehandler.util import copy_file, move_file
 
 
 def test_copy_file(tmp_path):
