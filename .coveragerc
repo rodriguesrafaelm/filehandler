@@ -1,5 +1,5 @@
 [run]
-source = filehandler/
+source = ./
 branch = True
 omit = setup.py
 
