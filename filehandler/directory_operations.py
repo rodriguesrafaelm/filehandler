@@ -9,7 +9,7 @@ from typing import List
 
 def create_directory(directory_path: str):
     """
-    Create a directory at the specified path.
+    Create a directory at the specified path. :)
 
     Args:
         directory_path (str): The path of the directory to create.
