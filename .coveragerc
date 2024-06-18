@@ -1,0 +1,12 @@
+[run]
+source = ./
+branch = True
+omit = setup.py
+
+[report]
+show_missing = True
+skip_covered = False
+fail_under = 100
+
+[coverage:html]
+directory = coverage_html_report
