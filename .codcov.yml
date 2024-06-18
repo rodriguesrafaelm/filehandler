@@ -1,0 +1,13 @@
+codecov:
+  require_ci_to_pass: yes
+  notify:
+    require_ci_to_pass: yes
+
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 1%
+codecov: 
+ token: 84eb07e6-938c-458b-8872-dde53bdabd44
