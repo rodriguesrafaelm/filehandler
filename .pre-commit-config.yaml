@@ -51,3 +51,21 @@ repos:
         pass_filenames: false
         additional_dependencies: [pytest, pytest-cov]
         files: ^(filehandler|tests)/
+  
+  - repo: local
+    hooks:
+      - id: codecov-upload
+        name: Upload coverage reports to Codecov
+        entry: bash
+        language: system
+        pass_filenames: false
+        args:
+          - -c
+          - |
+            TOKEN=84eb07e6-938c-458b-8872-dde53bdabd44
+            if [[ -z "${TOKEN}" ]]; then
+              echo "Error: CODECOV_TOKEN not set. Exiting."
+              exit 1
+            fi
+            curl -s https://codecov.io/bash | bash -s -- -t "${TOKEN}"
+        files: ^(filehandler|tests)/
