@@ -3,17 +3,17 @@ repos:
     rev: v1.10.0
     hooks:
       - id: mypy
-        files: ^(filehandler|tests)/
+        files: ^(filehandler)/
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
       - id: trailing-whitespace
-        files: ^(filehandler|tests)/
+        files: ^(filehandler)/
       - id: end-of-file-fixer
-        files: ^(filehandler|tests)/
+        files: ^(filehandler)/
       - id: check-added-large-files
-        files: ^(filehandler|tests)/
+        files: ^(filehandler)/
 
   - repo: https://github.com/pycqa/flake8
     rev: 7.1.0
@@ -21,7 +21,7 @@ repos:
       - id: flake8
         additional_dependencies: []
         entry: ./run_flake8.sh
-        files: ^(filehandler|tests)/
+        files: ^(filehandler)/
 
   - repo: local
     hooks:
@@ -31,7 +31,7 @@ repos:
         language: python
         types: [python]
         additional_dependencies: [pylint]
-        files: ^(filehandler|tests)/
+        files: ^(filehandler)/
 
   - repo: local
     hooks:
@@ -40,15 +40,15 @@ repos:
         entry: pytest
         language: python
         pass_filenames: false
-        files: ^(filehandler|tests)/
+        files: ^(filehandler)/
 
   - repo: local
     hooks:
       - id: coverage
         name: coverage
-        entry: pytest --cov=filehandler --cov-report=html
+        entry: ./run_coverage.sh
         language: python
         pass_filenames: false
         additional_dependencies: [pytest, pytest-cov]
-        files: ^(filehandler|tests)/
+        files: ^(filehandler)/
 
