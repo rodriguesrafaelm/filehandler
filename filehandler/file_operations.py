@@ -10,7 +10,7 @@ from typing import Any, Dict, List
 
 def read_text_file(file_path: str) -> str:
     """
-    Read the content of a text file.
+    Read the content of a text file. :)
 
     Args:
         file_path (str): The path to the text file.
