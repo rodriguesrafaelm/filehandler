@@ -1,12 +1,54 @@
 repos:
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.840
+    rev: v1.10.0
+    hooks:
+      - id: mypy
+        files: ^(filehandler)/
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        files: ^(filehandler)/
+      - id: end-of-file-fixer
+        files: ^(filehandler)/
+      - id: check-added-large-files
+        files: ^(filehandler)/
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies: []
+        entry: ./run_flake8.sh
+        files: ^(filehandler)/
+
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: ./run_pylint.sh
+        language: python
+        types: [python]
+        additional_dependencies: [pylint]
+        files: ^(filehandler)/
+
+  - repo: local
     hooks:
       - id: pytest
+        name: pytest
         entry: pytest
-        language: system
+        language: python
         pass_filenames: false
+        files: ^(filehandler)/
+
+  - repo: local
+    hooks:
       - id: coverage
-        entry: pytest --cov=/filehandler --cov-report html
-        language: system
+        name: coverage
+        entry: ./run_coverage.sh
+        language: python
         pass_filenames: false
+        additional_dependencies: [pytest, pytest-cov]
+        files: ^(filehandler)/
+

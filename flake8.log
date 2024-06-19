@@ -1,0 +1,12 @@
+./tests/test_file_operations.py:2:1: F403 'from filehandler.file_operations import *' used; unable to detect undefined names
+./tests/test_file_operations.py:7:5: F405 'write_text_file' may be undefined, or defined from star imports: filehandler.file_operations
+./tests/test_file_operations.py:8:12: F405 'read_text_file' may be undefined, or defined from star imports: filehandler.file_operations
+./tests/test_file_operations.py:16:5: F405 'write_csv_file' may be undefined, or defined from star imports: filehandler.file_operations
+./tests/test_file_operations.py:17:12: F405 'read_csv_file' may be undefined, or defined from star imports: filehandler.file_operations
+./tests/test_file_operations.py:23:5: F405 'write_json_file' may be undefined, or defined from star imports: filehandler.file_operations
+./tests/test_file_operations.py:24:12: F405 'read_json_file' may be undefined, or defined from star imports: filehandler.file_operations
+./tests/test_file_operations.py:32:5: F405 'write_xml_file' may be undefined, or defined from star imports: filehandler.file_operations
+./tests/test_file_operations.py:33:24: F405 'read_xml_file' may be undefined, or defined from star imports: filehandler.file_operations
+./tests/test_util.py:2:1: F403 'from filehandler.util import *' used; unable to detect undefined names
+./tests/test_util.py:11:5: F405 'copy_file' may be undefined, or defined from star imports: filehandler.util
+./tests/test_util.py:23:5: F405 'move_file' may be undefined, or defined from star imports: filehandler.util
