@@ -24,4 +24,3 @@ O FileHandler facilita operações comuns como leitura, escrita, cópia e exclus
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

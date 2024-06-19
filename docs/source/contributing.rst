@@ -25,4 +25,3 @@ Diretrizes de Estilo de Código
 ==============================
 
 Siga o PEP 8 para manter a consistência do código.
-
