@@ -7,7 +7,7 @@ pytest --cov=filehandler --cov-report=html
 COVERAGE_DIR=.
 
 # Envia os relatórios de cobertura para o Codecov
-curl -s https://codecov.io/bash | bash -s -- -t 84eb07e6-938c-458b-8872-dde53bdabd44 -f coverage.xml
+curl -s https://codecov.io/bash | bash -s -- -t c74d0652-575f-49a4-b77e-7857f25d42e8 -f coverage.xml
 
 # Abre a página index.html no navegador padrão
 if which xdg-open > /dev/null; then
