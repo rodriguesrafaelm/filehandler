@@ -9,4 +9,4 @@ skip_covered = False
 fail_under = 100
 
 [coverage:html]
-directory = coverage_html_report
+directory = ./logs/coverage_html_report
