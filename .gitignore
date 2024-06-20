@@ -1,6 +1,62 @@
-venv
-__pycache__
-docs/build
-*/__pycache__
-.pytest_cache
+# Byte-compiled / optimized / DLL files
+*__pycache__
+*.py[cod]
+*$py.class
+
+
+# C extensions
+*.so
+
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.coverage/
 logs/
+
+
+# pyenv
+.python-version
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+
+# Virtual environments
+.virtualenv/
+
+
+# Python virtual environments
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+
+# Mypy
+.mypy_cache/
