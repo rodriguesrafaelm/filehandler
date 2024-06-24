@@ -40,3 +40,29 @@ def pylint_tests(session):
     args = session.posargs or ["filehandler/", "tests/"]
 
     session.run("pylint", *args, external=True)
+
+
+@nox.session
+def mypy_tests(session):
+    global dependencies_installed
+
+    if not dependencies_installed:
+        session.install('-r', 'requirements.txt',)
+        dependencies_installed = True
+    
+    args = session.posargs or ["filehandler/", "tests/"]
+
+    session.run("pylint", *args, external=True)
+
+
+@nox.session
+def flake8_tests(session):
+    global dependencies_installed
+
+    if not dependencies_installed:
+        session.install('-r', 'requirements.txt',)
+        dependencies_installed = True
+    
+    args = session.posargs or ["filehandler/", "tests/"]
+
+    session.run("flake8", *args, external=True)
