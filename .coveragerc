@@ -1,7 +1,7 @@
 [run]
 source = ./
 branch = True
-omit = setup.py
+omit = setup.py, noxfile.py
 
 [report]
 show_missing = True
