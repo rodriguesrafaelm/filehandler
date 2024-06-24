@@ -8,4 +8,4 @@ else
     echo "A pasta 'logs' já existe."
 fi
 
-flake8 
+flake8 --format=html --htmldir ./logs/flake8_report
