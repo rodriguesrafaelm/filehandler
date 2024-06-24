@@ -1,3 +1,7 @@
+"""
+Test directory operations module.
+"""
+
 import os
 from filehandler.directory_operations import (
     create_directory,

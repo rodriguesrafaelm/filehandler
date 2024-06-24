@@ -1,7 +1,11 @@
+"""
+Test directory integrations module.
+"""
+
 import os
-import shutil
+
 import xml.etree.ElementTree as ET
-import pytest
+
 from filehandler.directory_operations import (
     create_directory,
     list_directory,
@@ -17,20 +21,15 @@ from filehandler.file_operations import (
     read_xml_file,
     write_xml_file,
 )
-from filehandler.util import copy_file, move_file
-
-
-@pytest.fixture(scope="function")
-def setup_test_dir():
-    """Fixture to create a test directory for integration tests."""
-    test_dir = "test_dir"
-    create_directory(test_dir)
-    yield test_dir
-    shutil.rmtree(test_dir)
-
+from filehandler.util import (
+    copy_file,
+    move_file,
+)
 
 def test_text_file_operations(setup_test_dir):
-    """Test writing and reading a text file."""
+    """
+    Test writing and reading a text file.
+    """
     file_path = os.path.join(setup_test_dir, "test.txt")
     content = "Hello, World!"
 
@@ -41,7 +40,9 @@ def test_text_file_operations(setup_test_dir):
 
 
 def test_csv_file_operations(setup_test_dir):
-    """Test writing and reading a CSV file."""
+    """
+    Test writing and reading a CSV file.
+    """
     file_path = os.path.join(setup_test_dir, "test.csv")
     rows = [
         ["Name", "Age", "City"],
@@ -56,7 +57,9 @@ def test_csv_file_operations(setup_test_dir):
 
 
 def test_json_file_operations(setup_test_dir):
-    """Test writing and reading a JSON file."""
+    """
+    Test writing and reading a JSON file.
+    """
     file_path = os.path.join(setup_test_dir, "test.json")
     data = {"name": "Alice", "age": 30, "city": "New York"}
 
@@ -67,7 +70,9 @@ def test_json_file_operations(setup_test_dir):
 
 
 def test_xml_file_operations(setup_test_dir):
-    """Test writing and reading an XML file."""
+    """
+    Test writing and reading an XML file.
+    """
     file_path = os.path.join(setup_test_dir, "test.xml")
     root = ET.Element("root")
     child = ET.SubElement(root, "child")
@@ -82,7 +87,9 @@ def test_xml_file_operations(setup_test_dir):
 
 
 def test_copy_move_file_operations(setup_test_dir):
-    """Test copying and moving files."""
+    """
+    Test copying and moving files.
+    """
     src_file = os.path.join(setup_test_dir, "src.txt")
     dst_file = os.path.join(setup_test_dir, "dst.txt")
     moved_file = os.path.join(setup_test_dir, "moved.txt")
@@ -104,7 +111,9 @@ def test_copy_move_file_operations(setup_test_dir):
 
 
 def test_directory_operations(setup_test_dir):
-    """Test creating, listing, and removing directories."""
+    """
+    Test creating, listing, and removing directories.
+    """
     sub_dir = os.path.join(setup_test_dir, "sub_dir")
     file_path = os.path.join(sub_dir, "test.txt")
     content = "Hello, World!"
