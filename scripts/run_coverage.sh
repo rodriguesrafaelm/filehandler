@@ -13,11 +13,3 @@ if [ ! -d "logs" ]; then
 else
     echo "A pasta 'logs' já existe."
 fi
-
-# Abre a página index.html no navegador padrão
-if which xdg-open > /dev/null; then
-    xdg-open ./logs/coverage_html_report/index.html
-else
-    echo "Não foi possível abrir a página. Verifique se um navegador está instalado e configurado corretamente."
-    exit 1
-fi
