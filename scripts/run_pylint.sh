@@ -8,4 +8,4 @@ else
     echo "A pasta 'logs' já existe."
 fi
 
-pylint ../filehandler > ./logs/pylint.log 2>&1
+pylint ./filehandler/ ./tests/ > ./logs/pylint.log 2>&1

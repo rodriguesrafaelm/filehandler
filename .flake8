@@ -1,3 +1,6 @@
 [flake8]
-max-line-length = 120
-filename = ./filehandler
+max-line-length = 80
+ignore = E203, W503
+docstring-convention = google
+filename = ./filehandler/*, ./tests/*
+select = C,E,F,W,D

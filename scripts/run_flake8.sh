@@ -7,5 +7,6 @@ if [ ! -d "logs" ]; then
 else
     echo "A pasta 'logs' já existe."
 fi
-
-flake8 --format=html --htmldir ./logs/flake8_report
+mkdir -p logs/flake8_report
+echo "Pasta 'logs/flake8_report' criada."
+flake8 --config=.flake8 --format=html --htmldir=logs/flake8_report
